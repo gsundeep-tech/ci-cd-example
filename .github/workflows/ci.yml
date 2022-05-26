@@ -20,12 +20,21 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+    
+    # checkout
     - uses: actions/checkout@v3
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    
+    # Linting checks
+    - name: linting checks
+    - run: cd $GITHUB_WORKSPACE && npm run lint
+    
+    # Executing Unit tests
+    - name: unit tests checks
+    - run: cd $GITHUB_WORKSPACE && npm i && npm run test
+  
