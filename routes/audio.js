@@ -5,7 +5,6 @@ const { MongoClient, ObjectId } = require("mongodb");
 require("dotenv").config();
 
 const url = process.env.DB_URI || "mongodb://localhost:27017/audio";
-// const url = "mongodb+srv://mongodb:mongodb@cluster0.q6anho0.mongodb.net/audio";
 const client = new MongoClient(url);
 client.connect();
 
