@@ -76,7 +76,7 @@ jobs:
           # using docker
           usedocker: true
           # docker args
-        docker_build_args: |
+          docker_build_args: |
             HD_DB_URI
         env:
           # use HD prefix the env to differentitate from github action env to heroku deployment env
