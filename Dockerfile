@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE $PORT
 
-RUN npm run start
+CMD ["npm", "run", "start"]
