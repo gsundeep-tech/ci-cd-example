@@ -32,7 +32,7 @@ jobs:
       # Executing the linting checks
       # linting can be added via the following command
       - name: linting checks
-        run: cd $GITHUB_WORKSPACE && npm run lint
+        run: cd $GITHUB_WORKSPACE && npm i && npm run lint
         
       # Executing the unit tests
       # unit tests can be executed via the following command
