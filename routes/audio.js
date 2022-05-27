@@ -2,7 +2,10 @@ var express = require("express");
 var router = express.Router();
 const { MongoClient, ObjectId } = require("mongodb");
 
-const url = "mongodb://localhost:27017/audio";
+require("dotenv").config();
+
+const url = process.env.DB_URI || "mongodb://localhost:27017/audio";
+// const url = "mongodb+srv://mongodb:mongodb@cluster0.q6anho0.mongodb.net/audio";
 const client = new MongoClient(url);
 client.connect();
 
