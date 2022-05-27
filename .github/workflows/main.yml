@@ -31,7 +31,7 @@ jobs:
       
       # Executing the linting checks
       - name: linting checks
-        run: cd $GITHUB_WORKSPACE && npm run lint
+        run: cd $GITHUB_WORKSPACE # && npm run lint
         
       # Executing the unit tests
       - name: unit tests checks
