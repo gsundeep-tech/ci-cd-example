@@ -35,10 +35,8 @@ jobs:
         run: cd $GITHUB_WORKSPACE && npm i && npm run lint
       
       # starting mongoDB
-      - name: Start MongoDB ${{ matrix.mongodb-version }}
+      - name: Start MongoDB
         uses: supercharge/mongodb-github-action@1.3.0
-        with:
-          mongodb-version: ${{ matrix.mongodb-version }}
       
       # Executing the integration tests
       # unit tests can be executed via the following command
