@@ -36,7 +36,7 @@ jobs:
       
       # starting mongoDB
       - name: Start MongoDB
-        uses: supercharge/mongodb-github-action@@1.7.0
+        uses: supercharge/mongodb-github-action@1.7.0
       
       # Executing the integration tests
       # integration tests can be executed via the following command
