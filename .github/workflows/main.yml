@@ -38,6 +38,10 @@ jobs:
       - name: Start MongoDB
         uses: supercharge/mongodb-github-action@1.7.0
       
+      # executing unit tests
+      - name: Executing unit tests
+        run: echo "This is sample step to run the unit tests"
+        
       # Executing the integration tests
       # integration tests can be executed via the following command
       - name: Integration tests checks
