@@ -1,4 +1,4 @@
-# Simple CI CD Example for Node JS Application
+# CI CD Setup for Node JS Application
 [Table of Contents](#table-of-contents)
 1. [Application Architecture](#application-architecture)  
     * [Setup Heroku Account](#setup-heroku-account)  
