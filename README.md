@@ -107,3 +107,7 @@ Following are the additional steps we can handle to make the application product
 * Staging and Production Deployments
 * unit tests
 * Github account settings like restricting access to direct merge to main branch and reviews for PR
+
+# Deployement Details:
+* Deployed Application URL: https://ci-cd-sundeep.herokuapp.com/
+* DB: ![db](/docs/images/db.png)
